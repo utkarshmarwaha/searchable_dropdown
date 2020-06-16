@@ -299,8 +299,10 @@ class _MyAppState extends State<MyApp> {
       "Single menu": SearchableDropdown.single(
         items: items,
         value: selectedValue,
+
         hint: "Select one",
         searchHint: null,
+        label:"Category",
         onChanged: (value) {
           setState(() {
             selectedValue = value;
